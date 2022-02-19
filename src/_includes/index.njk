@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+        <link rel="stylesheet" href="{{ 'css/style.css' | url }}">
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <header class="header">
+            <figure>
+                <a href="/">
+                    <img src="./img/blog-icon.png" alt="" style="width: 70px;">
+                </a>
+            </figure>
+            <div class='menu-container'>
+                <ul class='menu'>
+                    <li class='menu-item'>
+                        <a href='/'>
+                            Home</a>
+                    </li>
+                    <li class='menu-item'>
+                        <a href="/blog/first-post/">Makeup Brushs</a>
+                    </li>
+                    <li class='menu-item'>
+                        <a href="/blog/second-post/">
+                            Makeup Colors
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div id="image-center">
+            <figure>
+                <img src="./img/brushes.jpeg" style="width: 500px; height:350px; padding: 100px;">
+                <img src="./img/colors.jpeg" style="width: 500px; height:350px; padding: 100px;">
+            </figure>
+        </div>
+        <main>
+            {{ content | safe }}
+        </main>
+    </body>
+</html>

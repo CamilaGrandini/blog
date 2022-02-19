@@ -1,0 +1,20 @@
+{
+  "name": "blog",
+  "version": "0.0.1",
+  "description": "eleventy blog website",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --input=src --serve",
+    "build": "npx @11ty/eleventy --input=src"
+  },
+  "keywords": [
+    "blog",
+    "eleventy",
+    "jamstack"
+  ],
+  "author": "Camila",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}
